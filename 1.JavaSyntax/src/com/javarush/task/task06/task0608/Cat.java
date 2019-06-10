@@ -1,0 +1,40 @@
+package com.javarush.task.task06.task0608;
+
+/* 
+Статические методы для кошек
+*/
+
+public class Cat {
+    private static int catCount = 0;
+
+    public Cat() {
+        catCount++;
+    }
+
+    public static int getCatCount() {
+        //напишите тут ваш код
+        return Cat.catCount;
+
+    }
+
+    public static void setCatCount(int catCount) {
+        //напишите тут ваш код
+        Cat.catCount = catCount;
+
+    }
+
+    public static void main(String[] args) {
+        Cat c1 = new Cat();
+        Cat c12 = new Cat();
+        Cat c13 = new Cat();
+        Cat c14 = new Cat();
+        Cat c15 = new Cat();
+        Cat c16 = new Cat();
+        Cat c17 = new Cat();
+        Cat c18 = new Cat();
+        System.out.println(getCatCount());
+        setCatCount(3);
+        System.out.println(getCatCount());
+
+    }
+}
