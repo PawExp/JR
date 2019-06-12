@@ -1,6 +1,8 @@
 package com.javarush.task.task17.task1710;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class Person {
     private String name;
@@ -43,5 +45,14 @@ public class Person {
 
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
+    }
+
+    @Override
+    public String toString() {
+        if (birthDate != null && this.sex == sex.MALE) {
+            return name + " м " + new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH).format(birthDate);
+        }else if(birthDate != null && this.sex == sex.FEMALE)
+            return name + " ж " + new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH).format(birthDate);
+        return name + "" + sex + "" + birthDate;
     }
 }
