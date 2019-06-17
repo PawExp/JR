@@ -14,7 +14,10 @@ public class Solution {
         Thread t2 = new T2();
         Thread t3 = new T3();
         Thread t4 = new T4();
+
         Thread t5 = new T5();
+
+
 
         threads.add(t1);
         threads.add(t2);
@@ -27,7 +30,8 @@ public class Solution {
 //        threads.get(3).start();
 //        Thread.sleep(2000);
 //        System.out.println(threads.get(3).isAlive());
-//        threads.get(3).showWarning();
+
+//        (Message)threads.get(3).showWarning();
 //        Thread.sleep(2000);
 //        System.out.println(threads.get(3).isAlive());
 
@@ -77,8 +81,8 @@ public class Solution {
         }
 
         @Override
-        public void showWarning() {
-            aBoolean = false;
+        public boolean showWarning() {
+           return aBoolean = false;
         }
     }
 
