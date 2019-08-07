@@ -2,7 +2,7 @@ package com.javarush.task.task13.task1325;
 
 import java.awt.*;
 
-import static javafx.scene.paint.Color.GREY;
+//import static javafx.scene.paint.Color.GREY;
 
 /* 
 Компиляция программы
