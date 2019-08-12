@@ -15,8 +15,8 @@ public class Solution {
         //вы можете найти your_file_name.tmp в папке TMP или исправьте outputStream/inputStream в соответствии с путем к вашему реальному файлу
         try {
             File yourFile = File.createTempFile("test", null);
-            OutputStream outputStream = new FileOutputStream("test");
-            InputStream inputStream = new FileInputStream("test");
+            OutputStream outputStream = new FileOutputStream(yourFile);
+            InputStream inputStream = new FileInputStream(yourFile);
 
             JavaRush javaRush = new JavaRush();
             //initialize users field for the javaRush object here - инициализируйте поле users для объекта javaRush тут
