@@ -35,6 +35,7 @@ public class Solution {
             System.out.println(javaRush.equals(loadedObject));
             outputStream.close();
             inputStream.close();
+            yourFile.deleteOnExit();
 
         } catch (IOException e) {
             //e.printStackTrace();
