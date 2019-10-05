@@ -1,4 +1,4 @@
-package com.javarush.task.task31.task3111;
+﻿package com.javarush.task.task31.task3111;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,7 +15,7 @@ public class Solution {
         SearchFileVisitor searchFileVisitor = new SearchFileVisitor();
 
         searchFileVisitor.setPartOfName("amigo");
-        searchFileVisitor.setPartOfContent("programmer");
+        searchFileVisitor.setPartOfContent("programmerr");
         searchFileVisitor.setMinSize(500);
         searchFileVisitor.setMaxSize(10000);
 
