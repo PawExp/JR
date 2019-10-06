@@ -1,4 +1,4 @@
-﻿package com.javarush.task.task31.task3111;
+package com.javarush.task.task31.task3111;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,11 +15,11 @@ public class Solution {
         SearchFileVisitor searchFileVisitor = new SearchFileVisitor();
 
         searchFileVisitor.setPartOfName("amigo");
-        searchFileVisitor.setPartOfContent("programmerr");
+        searchFileVisitor.setPartOfContent("programmer");
         searchFileVisitor.setMinSize(500);
         searchFileVisitor.setMaxSize(10000);
 
-        Files.walkFileTree(Paths.get("D:/SecretFolder"), searchFileVisitor);
+        Files.walkFileTree(Paths.get("D:/Test"), searchFileVisitor);
 
         List<Path> foundFiles = searchFileVisitor.getFoundFiles();
         for (Path file : foundFiles) {
